@@ -53,6 +53,7 @@ footer {
           background-image: url(../../assets/icons/check.svg);
           background-repeat: no-repeat;
           border: 1px solid var(--brand-light);
+          border-radius: .25rem;
       }
   }
 }
