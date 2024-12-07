@@ -1,0 +1,52 @@
+h1 {
+  font: var(--text-lg);
+  color: var(--pink);
+}
+
+p {
+  font: var(--text-body-md);
+  color: var(--text-heading);
+  font-weight: 300;
+}
+
+h2 {
+  font: var(--text-heading-md);
+  color: var(--text-heading);
+}
+
+h3 {
+  font: var(--text-heading-sm);
+  color: var(--text-heading);
+}
+
+.event-input {
+  display: flex;
+  align-items: center;
+  gap: .75rem;
+
+  & img {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+}
+
+.flex {
+  display: flex;
+  gap: 1rem;
+}
+
+.flex-1 {
+  flex: 1;
+}
+
+.flex-2 {
+  flex: 2;
+}
+
+.lb-color {
+  color: #FFF;
+}
+
+.lb-top {
+  margin-top: 1.75rem;
+}
