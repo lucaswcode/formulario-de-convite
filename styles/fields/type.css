@@ -28,6 +28,7 @@
   font: var(--text-body-sm);
   color: var(--text-body);
   transition: color 0.3s ease;
+  margin-top: 15px;
 }
 
 .toggle-wrapper input[type="radio"]:checked + label {

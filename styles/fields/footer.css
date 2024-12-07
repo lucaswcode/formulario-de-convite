@@ -6,7 +6,6 @@ footer {
   border-top: 1px solid var(--input-stroke);
   margin-top: 3rem;
 }
-
 .terms-wrapper {
   margin-top: 0.75rem;
   display: flex;
@@ -31,16 +30,21 @@ footer {
   }   
 
   .checkbox-image {
-      flex:  0 0 1.5rem;
-      height: 1.5rem;
+      flex:  0 0 1.25rem;
+      height: 1.25rem;
       background-image: url(../../assets/icons/check-unchecked.svg);
       background-size: cover;
+      display: block;
+      margin-bottom: 10px;
   }
 
   &:hover, &:focus {
+    
       .checkbox-image {
           background-image: url(../../assets/icons/check-hover.svg);
           background-repeat: no-repeat;
+          border: 1px solid var(--input-stroke);
+          border-radius: .25rem;
       }
   }
 
@@ -48,6 +52,7 @@ footer {
       .checkbox-image {
           background-image: url(../../assets/icons/check.svg);
           background-repeat: no-repeat;
+          border: 1px solid var(--brand-light);
       }
   }
 }
