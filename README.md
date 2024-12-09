@@ -6,5 +6,5 @@ Projeto desenvolvido durante o curso de Full-Stack da Rocketseat, com o objetivo
 - HTML
 - CSS 
 
-## 🎥 Aprentação do projeto
+## 🎥 Apresentação do projeto
 <img src="assets/images/projeto.png" alt="Imagem do projeto: formulário de criação de convites personalizados">
