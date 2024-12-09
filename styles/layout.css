@@ -8,7 +8,9 @@
 }
 
 aside {
-  background-image: url(../assets/images/Background.png);
+  background: 
+    linear-gradient(180deg, rgba(33, 37, 38, 0.80) 0%, rgba(33, 37, 38, 0.65) 20%, rgba(33, 37, 38, 0.30) 40.5%, rgba(33, 37, 38, 0.10) 100%), 
+    url(../assets/images/Background.png);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
