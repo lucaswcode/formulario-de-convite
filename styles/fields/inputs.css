@@ -1,0 +1,64 @@
+input,
+textarea {
+  appearance: none;
+  width: 100%;
+  border-radius: 0.5rem;
+  border: 1px solid transparent;
+  outline: 1px solid var(--input-stroke);
+  font: var(--text-body-md);
+  color: var(--input-placeholder);
+  background-color: var(--input-base);
+  padding: 0.8rem 1rem;
+
+  &:hover {
+    border-color: var(--brand-light);
+    outline: 1px solid var(--brand-light);
+  }
+
+  &:focus {
+    border-color: var(--brand-light);
+    outline: none;
+  }
+
+  &[required] + .error {
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+    font: var(--text-body-xs);
+    color: var(--danger);
+    margin-top: 0.5rem;
+  }
+
+  &:valid + .error {
+    display: none;
+  }
+
+  &:not(:focus):invalid {
+    border: 1px solid transparent;
+  }
+
+  &:not(:focus):invalid + .error {
+    display: none;
+  }
+
+  &:invalid {
+    border: 0.125rem solid var(--danger);
+  }
+}
+
+label {
+  font: var(--text-body-sm);
+  color: var(--text-body);
+}
+
+input[type="datetime-local"] {
+  text-transform: uppercase;
+  position: relative;
+  &::-webkit-calendar-picker-indicator {
+    opacity: 0;
+  }
+}
+
+.error span {
+  color: var(--danger);
+}

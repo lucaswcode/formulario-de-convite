@@ -1,0 +1,106 @@
+.colors {
+  & .radio-wrapper {
+    width: 100%;
+    display: inline-flex;
+    justify-content: space-between;
+  }
+  & .radio-inner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  & .radio-inner input {
+    width: 1rem;
+    aspect-ratio: 1 /1;
+    border-radius: 100%;
+    border: 0.4rem solid var(--shape-button);
+  }
+  & .radio-inner input#blue {
+    background-color: var(--brand-light);
+  }
+  & .radio-inner input#navy {
+    background-color: var(--navy);
+  }
+  & .radio-inner input#purple {
+    background-color: var(--purple);
+  }
+  & .radio-inner input#fuschia {
+    background-color: var(--fuschia);
+  }
+  & .radio-inner input#pink {
+    background-color: var(--pink);
+  }
+  & .radio-inner input#red {
+    background-color: var(--danger);
+  }
+  & .radio-inner input#orange {
+    background-color: var(--orange);
+  }
+  & .radio-inner input#yellow {
+    background-color: var(--yellow);
+  }
+  & .radio-inner input#lime {
+    background-color: var(--lime);
+  }
+  & .radio-inner input#green {
+    background-color: var(--green);
+  }
+  & .radio-inner input#cyan {
+    background-color: var(--cyan);
+  }
+  & .radio-inner input:hover {
+    border: 0.4rem solid var(--shape-hover);
+    cursor: pointer;
+  }
+  & .radio-inner input:checked {
+    border: 0.4rem solid var(--shape-hover);
+    outline: 0.125rem solid var(--brand-light);
+  }
+}
+
+.event-theme {
+  & .radio-wrapper {
+    display: grid;
+    justify-items: center;
+    grid-template-columns: repeat(4, 8.375rem);
+    gap: 0.5rem;
+  }
+
+  & .radio-inner {
+    display: grid;
+    flex-direction: column;
+    text-align: center;
+    position: relative;
+    justify-content: center;
+    background-color: var(--shape-button);
+    border-radius: 0.5rem;
+
+    & img {
+      display: grid;
+      justify-content: center;
+      align-items: center;
+      object-fit: cover;
+      padding: 0.25rem 0.25rem 0 0.25rem;
+    }
+
+    label {
+      margin-block: 0.5rem;
+    }
+
+    input {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background-color: transparent;
+      border-radius: 0.5rem;
+      cursor: pointer;
+      outline: 1px solid transparent;
+    }
+  }
+  & .radio-inner:hover {
+    background-color: var(--input-stroke);
+  }
+  & .radio-inner input:checked {
+    border: 0.125rem solid var(--brand-light);
+  }
+}

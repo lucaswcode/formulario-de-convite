@@ -1,0 +1,56 @@
+.switch {
+  display: inline-flex;
+  position: relative;
+
+  & input {
+    appearance: none;
+    width: 4rem;
+    height: 2rem;
+    border-radius: 99px;
+  }
+
+  & .click {
+    position: absolute;
+    width: 4rem;
+    height: 2rem;
+    border-radius: 99px;
+    background-color: var(--input-base);
+    border: 1px solid var(--input-stroke);
+    cursor: pointer;
+  }
+
+  & .click::before {
+    content: "";
+    position: absolute;
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 50%;
+    background-color: var(--input-stroke);
+    top: 0.25rem;
+    left: 0.25rem;
+  }
+
+  & label {
+    margin-top: 0.4rem;
+    margin-left: 0.75rem;
+  }
+
+  & input:checked + .click {
+    background-color: var(--brand-light);
+  }
+
+  & input:checked + .click::before {
+    -webkit-transform: translateX(1.9rem);
+    -ms-transform: translateX(1.9rem);
+    transform: translateX(1.9rem);
+    background-color: var(--text-heading);
+  }
+
+  & input:checked + .click + label.theme:before {
+    content: "Claro";
+  }
+
+  & label.theme:before {
+    content: "Escuro";
+  }
+}
