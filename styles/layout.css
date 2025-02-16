@@ -1,0 +1,33 @@
+#invitation {
+  display: grid;
+  grid-template-columns: 32.75% 67.25%;
+  height: 100vh;
+  overflow: hidden;
+  padding: 1.25rem;
+  gap: 1.25rem;
+}
+
+aside {
+  background: 
+    linear-gradient(180deg, rgba(33, 37, 38, 0.80) 0%, rgba(33, 37, 38, 0.65) 20%, rgba(33, 37, 38, 0.30) 40.5%, rgba(33, 37, 38, 0.10) 100%), 
+    url(../assets/images/Background.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: .75rem;
+  overflow: hidden;
+  padding: 2rem 2rem 34.5rem 2rem;
+
+  & img {
+    width: 2.8rem;
+    height: 3rem;
+    margin-bottom: 1rem;
+  }
+}
+
+main {
+  overflow: auto;
+  background: var(--shape-body);
+  border-radius: .75rem;
+  padding: 5rem 8.125rem
+}
